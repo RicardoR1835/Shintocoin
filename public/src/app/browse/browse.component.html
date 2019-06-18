@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <br>
+  <h1 class="text-center">Browse the Ledger</h1>
+  <br>
+  <p>Here you can browse all Shincoin Interactions</p>
+  <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Action</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Value</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let x of data'>
+          <td>{{x[1]}}</td>
+          <td>{{x[2]}}</td>
+          <td>{{x[3]}}</td>
+          <td><button  [routerLink]="['/details']" (click)="getinfo(x)" class="btn btn-primary">Details</button></td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>
+
+  <!--  -->

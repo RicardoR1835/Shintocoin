@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <br>
+  <h1 class="text-center">Sell ShintoCoins</h1>
+  <br>
+  <p *ngIf='correct' class="text-center correct">Thanks for your business!</p>
+  <p>Current ShintoCoin Value: $700.00</p>
+  <p>Number of Shincoins Owned: {{ numbers.length }}</p>
+  <form (submit)="onSubmit()">
+    <input [(ngModel)]="sell.amount" type="number" name="sell.amount" >
+    <br>
+    <br>
+    <button class="sp" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+  </div>

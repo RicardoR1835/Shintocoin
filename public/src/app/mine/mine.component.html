@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <br>
+<h1 class="text-center">Here you can mine ShintoCoins by being the first to solve this question:</h1>
+<br>
+<h1 *ngIf='wrong' class="text-center wrong">WRONG!</h1>
+<h1 *ngIf='correct' class="text-center correct">You are correct Sir/Madam!</h1>
+<p>Who is the flyest mother shut your mouth on this planet?</p>
+<form (submit)="onSubmit()">
+  <input [(ngModel)]="answer.answer" type="text" name="answer.answer" placeholder="Your answer">
+  <br>
+  <br>
+  <button class="sp" type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
